@@ -4,7 +4,7 @@ print(list) # all the list items
 print(list[3]) # index number 3 (python)
 print(list[3:]) # starts from index 3
 print(list[2:4]) # starts from index 2 , and will show 4-2 = 2 items
-print(list[-1]) # reverse the items
+print(list[-1])  # reverse the items
 
 print("C" in list) # true
 print("python" in list) # false , as python is written as Python in the list. It's case-sensitive
