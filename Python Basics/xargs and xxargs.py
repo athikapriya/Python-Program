@@ -1,4 +1,4 @@
-### xargs
+### xargs or Arbitary arguments
 def student(*details):
     print(details[1])
 
@@ -15,7 +15,7 @@ def add(*numbers):
 add(10, 20, 30)
 
 
-### xxargs
+### xxargs or Keyword arguments
 def info(**detail_info):
     print(detail_info)
     print(detail_info["name"])
