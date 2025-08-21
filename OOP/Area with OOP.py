@@ -7,11 +7,21 @@ class areaOfShapes:
         self.height = height
 
     def calculate_area(self):
-        Area_of_Triangle = 1/2 * (self.base * self.height)
-        Area_of_Square = (self.base * self.height)
-        return f"Area of Triangle :  {Area_of_Triangle}. Area of Square : {Area_of_Square}"
+        print("I am area method of areaOfShapes class")
 
 
+class triangle(areaOfShapes):
+    def calculate_area(self):
+        area = (self.base * self.height) * 1/2
+        print(f"Area of triangle : {area}")
 
-area = areaOfShapes(base, height)
-print(area.calculate_area())
+class square(areaOfShapes):
+    def calculate_area(self):
+        area = (self.base * self.height)
+        print(f"Area of square : {area}")
+
+x = triangle(base, height)
+x.calculate_area()
+
+y = square(base, height)
+y.calculate_area()
