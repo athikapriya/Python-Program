@@ -1,45 +1,81 @@
-list = ["C", "C++", "Java", "Python", "Ruby", "Scala"]
+fruits = ["Apple", "Orange", "Mango", "Lichi", "Kiwi"]
+print(fruits)
 
-print(list) # all the list items
-print(list[3]) # index number 3 (python)
-print(list[3:]) # starts from index 3
-print(list[2:4]) # starts from index 2 , and will show 4-2 = 2 items
-print(list[-1])  # reverse the items
+# length of the list
+length = len(fruits)
+print(f"The length of the list is : {length}")
 
-print("C" in list) # true
-print("python" in list) # false , as python is written as Python in the list. It's case-sensitive
-print("Swift" not in list) # true
+# data types for list
+list1 = ["apple", 1, True]
 
-print(list + ["Kotlin", 27]) # add items
-print(list * 3) # shows 3 times of these items
+print(list1)
+print(type(list1[0]))
+print(type(list1[1]))
+print(type(list1[2]))
 
-print(len(list)) # shows length of the list items
-list.append("BASIC") # append item at the end
-print(list)
+# creating new list with "List" Constructor
+name = ("Athika", "Priya")
+name = list(name)
+print(name)
 
-list.insert(2, "Fortran") # insert items following the index number
-print(list)
+# Access List item
+print(fruits[2])
+print(fruits[-1])
+print(fruits[2:6])
+print(fruits[:4])
+print(fruits[3:])
+print(fruits[::-1])
+print(fruits[-3:-1])
 
-list.remove("BASIC") # remove item
-print(list)
+# check if item exit
+if "apple" in fruits:
+    print("List item exits.")
+else:
+    print("Item not exits.")
 
-list.sort() # sort items according to the alphabetic order
-print(list)
+# change Items
+fruits[2] = "Watermelon"
+print(fruits)
+fruits[1:2] = ["Mango", "Guava"]
+print(fruits)
+fruits[1:7] = [1, 2, 3]
+print(fruits)
 
-list.reverse() # reverse item according to the alphabetic order
-print(list)
+# add items
+fruits.append("Organge")
+print(fruits)
+fruits.insert(2, "Banana")
+print(fruits)
+newFruits = ["pineapple", "papaya", "pineapple",]
+fruits.extend(newFruits)
+print(fruits)
+morefruits = ("Peach", "grapefruit") # add tuples
+fruits.extend(morefruits)
+print(fruits)
 
-list.pop() # remove list item
-print(list)
+# remove items
+fruits.remove("pineapple")
+print(fruits)
+fruits.pop(2)
+print(fruits)
+fruits.pop()
+print(fruits)
+del fruits[0]
+print(fruits)
+#del fruits          # can delete full list
+# fruits.clear()      # clear list
+# print(fruits)
 
-position = list.index("C++") # shows index number of the item
-print(position)
+# Looping list
+for x in fruits:
+    print(x)
+for i in range(len(fruits)):
+    print(fruits[i])
 
-languages = list.copy() # copy items
-print("languages : " , languages)
+a = 0       # while loop
+while a < len(fruits):
+    print(fruits[a])
+    a += 1
 
-count = list.count("Java") # shows how many times Java is in the list
-print(count)
-
-list.clear() # clear all items
-print(list)
+fruits.reverse()
+print(fruits)
