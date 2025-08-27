@@ -6,7 +6,10 @@ syntax
 num = [1, 2, 3, 4, 5]
 
 square = [x * x for x in num]
-print("Square : " , square)
+print(square)
 
-mod = [x for x in num if x % 2 == 0] # used filtering here
-print(mod)
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+newfruits = [x for x in fruits if "a" in x]
+print(newfruits)
+freshFruits = [x.upper() for x in fruits if x != "mango"]
+print(freshFruits)
