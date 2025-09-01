@@ -2,14 +2,14 @@
 # Parent class is called base class.
 # Child Class is called derived class.
 
-class sectionA:
+class sectionA: # this is superclass or parent class or base class
     def roll1(self):
         print("Anika")
 
     def roll2(self):
         print("Sara")
 
-class SectionB(sectionA):
+class SectionB(sectionA): # this is subclass or child class or derived class
     def roll3(self):
         print("Satabdi")
 
